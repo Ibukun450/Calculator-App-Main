@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      html {
+          box-sizing: border-box;
+      }
+
+      *, *::after, *::before {
+          box-sizing: inherit;
+      }
+
+      body {
+          background-color: hsl(222, 26%, 31%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;font-family: 'League Spartan', sans-serif;
+      }
+
+      .main-container {
+          width: 300px;
+          height: 475px;
+          background-color: #fff;
+          border-radius: 15px;
+          padding: 20px;
+          width: 100%; 
+          max-width: 400px;
+          padding: 20px;
+          height: auto;
+      }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main-div">
+    <div class="head-div">
+      <div class="head-sec">
+        <h1 style="color: #fff; font-size: 25px;
+        margin: 0;
+        margin-top: 30px;
+      font-weight: 800;">calc</h1>
+      </div>
+
+      <div class="toggle-div">
+        <p id="theme">THEME</p>
+        <div class="toggle-sec">
+          <div class="num">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+
+          <a href="light-theme.html" style="text-decoration: none;">
+          <div class="empty-toggle">
+            
+              <div class="red-ball"></div>       
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="input-div">
+      <input type="text" id="input">
+    </div>
+
+    <div class="key-div">
+      <div class="first-row" style="width: 420px;">
+        <input type="button" value="7" onclick="input.value += 7">
+        <input type="button" value="8"
+        onclick="input.value += 8">
+        <input type="button" value="9" onclick="input.value += 9">
+        <input type="button" value="DEL" onclick="input.value = input.value.toString().slice(0, -1)" id="delete-button">
+      </div>
+
+      <div class="second-row" style="width: 420px;">
+        <input type="button" value="4" onclick="input.value += 4">
+        <input type="button" value="5" onclick="input.value += 5">
+        <input type="button" value="6" onclick="input.value += 6">
+        <input type="button" value="+" onclick="input.value += '+'" style="margin-right: 0px;">
+      </div>
+
+      <div class="third-row"  style="width: 420px;">
+        <input type="button" value="1" onclick="input.value += 1">
+        <input type="button" value="2" onclick="input.value += 2">
+        <input type="button" value="3" onclick="input.value += 3">
+        <input type="button" value="-" onclick="input.value += '-'" style="margin-right: 0px;">
+      </div>
+
+      <div class="fourth-row" style="width: 420px;">
+        <input type="button" value="." onclick="input.value += '.'">
+        <input type="button" value="0" onclick="input.value += 0">
+        <input type="button" value="/" onclick="input.value += '/'">
+        <input type="button" value="*" onclick="input.value += '*'" style="margin-right: 0px;">
+      </div>
+
+      <div class="last-row"  style="width: 420px;">
+        <input type="button" value="RESET" onclick="input.value = '' " id="rst-button">
+        <input type="button" value="=" onclick="input.value = eval(input.value)" id="equals-button"style="margin-right: 0px;">
+      </div>
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

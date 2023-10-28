@@ -1,0 +1,134 @@
+#input {
+    width: 455px;
+    height: 80px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    background-color: hsl(224, 36%, 15%);
+    border: none;
+    border-radius: 7px;
+}
+
+.input-div {
+    margin-bottom: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.key-div {
+    background-color: hsl(223, 31%, 20%);
+    border: none;
+    border-radius: 7px;
+    padding: 20px;
+    height: auto;
+    width: 455px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+input[type= "button"] {
+    padding: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    color: hsl(222, 
+    26%, 31%);
+    font-weight: bold;
+    width: 85px;
+    height: 50px;
+    background-color: hsl(30, 25%, 89%);
+    border-radius: 10px;
+    border: none;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 1px 0px hsl(28, 16%, 65%);
+}
+
+#delete-button {
+    background-color:  hsl(225, 21%, 49%);
+    color: white;
+    font-size: 22px;
+    box-shadow: 0px 3px 1px 0px hsl(224, 28%, 35%);
+    margin-right: 0px;
+}
+
+.last-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#rst-button {
+    background-color:  hsl(225, 21%, 49%);
+    color: white;
+    font-size: 22px;
+    box-shadow: 0px 3px 1px 0px hsl(224, 28%, 35%);
+    width: 200px;
+    margin-top: 5px;
+}
+
+#equals-button {
+    background-color:  hsl(6, 63%, 50%);
+    color: white;
+    font-size: 22px;
+    box-shadow: 0px 3px 1px 0px hsl(6, 70%, 34%);
+    width: 200px;
+    margin-top: 5px;
+}
+
+.head-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.toggle-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-div #theme {
+    color: white;
+    margin-top: 49px;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.num p {
+    margin-left: 12px;
+    color: white;
+}
+
+.toggle-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.empty-toggle {
+    content: '';
+    width: 70px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: hsl(224, 36%, 15%);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.num {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 35px;
+}
+
+.empty-toggle .red-ball {
+    content: '';
+    border-radius: 50px;
+    background-color: hsl(6, 63%, 50%);
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+

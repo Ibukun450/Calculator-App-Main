@@ -1,0 +1,133 @@
+#input {
+    width: 455px;
+    height: 80px;
+    text-align: right;
+    color: hsl(52, 100%, 62%);
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    background-color: hsl(268, 71%, 12%);
+    border: none;
+    border-radius: 7px;
+}
+
+.input-div {
+    margin-bottom: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.key-div {
+    background-color: hsl(268, 71%, 12%);
+    border: none;
+    border-radius: 7px;
+    padding: 20px;
+    height: auto;
+    width: 455px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+input[type= "button"] {
+    padding: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    color: hsl(52, 100%, 62%);
+    font-weight: bold;
+    width: 85px;
+    height: 50px;
+    background-color: hsl(281, 89%, 26%);
+    border-radius: 10px;
+    border: none;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 1px 0px hsl(285, 91%, 52%);
+}
+
+#delete-button {
+    background-color:  hsl(185, 42%, 37%);
+    color: white;
+    font-size: 22px;
+    box-shadow: 0px 3px 1px 0px hsl(185, 58%, 25%);
+    margin-right: 0px;
+}
+
+.last-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#rst-button {
+    background-color:   hsl(268, 47%, 21%);
+    color: white;
+    font-size: 22px;
+    box-shadow: 0px 3px 1px 0px hsl(290, 70%, 36%);
+    width: 200px;
+    margin-top: 5px;
+}
+
+#equals-button {
+    background-color:   hsl(176, 100%, 44%);
+    color: black;
+    font-size: 22px;
+    box-shadow: 0px 3px 1px 0px hsl(177, 92%, 70%);
+    width: 200px;
+    margin-top: 5px;
+}
+
+.head-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.toggle-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-div #theme {
+    color: hsl(52, 100%, 62%);
+    margin-top: 49px;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.num p {
+    margin-left: 12px;
+    color: hsl(52, 100%, 62%);
+}
+
+.toggle-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.empty-toggle {
+    content: '';
+    width: 70px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: hsl(268, 71%, 12%);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.num {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 35px;
+}
+
+.empty-toggle .red-ball {
+    content: '';
+    border-radius: 50px;
+    background-color: hsl(176, 100%, 44%);
+    width: 16px;
+    height: 16px;
+    margin-left: 50px;
+}
+
